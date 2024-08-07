@@ -4,12 +4,15 @@ namespace Proj_livraria.Menus;
 
 internal class ListarLivros
 {
-    public void MostrarLivros(Dictionary<string, Livros> listaDeLivros)
+    public static void MostrarLivros(Dictionary<string, Livros> listaDeLivros)
     {
-        Console.WriteLine("Listagem de livros:");
+        Console.Clear();
+        Console.WriteLine("Listagem de livros:\n");
         foreach (var livros in listaDeLivros.Keys)
         {
             Console.WriteLine(livros);
         }
+        Console.WriteLine("\nDigite qualquer tecla para sair.");
+        Console.ReadKey();
     }
 }
