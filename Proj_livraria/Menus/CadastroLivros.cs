@@ -25,7 +25,7 @@ internal class CadastroLivros
             Console.Write("Autor: ");
             string autor = Console.ReadLine()!;
 
-            Console.WriteLine("Nacionalidade: ");
+            Console.Write("Nacionalidade: ");
             string nacionalidade = Console.ReadLine()!;
             //Adicionando os dados do autor.
             Autores autores = new Autores(autor, nacionalidade);

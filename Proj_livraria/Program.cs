@@ -11,7 +11,7 @@ void MenuPrincipal()
     Console.WriteLine("Escolha uma das opções");
     Console.WriteLine("1 - Adicionar livro\n" +
         "2 - Listar todos os livros\n" +
-        "3 - Listar apenas um livro\n" +
+        "3 - Mostrar apenas um livro\n" +
         "4 - Remover livro\n" +
         "5 - Editar dados do livro\n" +
         "6 - Sair");
@@ -28,11 +28,11 @@ void MenuPrincipal()
             MenuPrincipal();
             break;
         case 3:
-            Console.WriteLine("opcao");
+            MostrarDetalhes.MostrarDetalhesLivros(listaDeLivros);
             MenuPrincipal();
             break;
         case 4:
-            Console.WriteLine("opcao");
+            RemoverLivro.DeletarLivro(listaDeLivros);
             MenuPrincipal();
             break;
         case 5:

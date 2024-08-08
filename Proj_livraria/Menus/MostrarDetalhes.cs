@@ -4,8 +4,9 @@ namespace Proj_livraria.Menus;
 
 internal class MostrarDetalhes
 {
-    public void MostrarDetalhesLivros(Dictionary<string, Livros> listaDeLivros)
+    public static void MostrarDetalhesLivros(Dictionary<string, Livros> listaDeLivros)
     {
+        Console.Clear();
         Console.WriteLine("Digite o nome do livro: ");
         string nomeLivro = Console.ReadLine();
         if (listaDeLivros.ContainsKey(nomeLivro))
@@ -15,7 +16,9 @@ internal class MostrarDetalhes
             Console.WriteLine($"Titulo: {livrosRegistrados.Titulo}");
             Console.WriteLine($"Genero: {livrosRegistrados.Genero}");
             Console.WriteLine($"Ano publicação: {livrosRegistrados.AnoPublicacao}");
-            Console.WriteLine($"Quantidade: {livrosRegistrados.Quantidade}");
+            Console.WriteLine($"Quantidade: {livrosRegistrados.Quantidade}\n");
+            Console.WriteLine("Digite qualquer tecla para sair.");
+            Console.ReadKey();
         }
         else
         {
