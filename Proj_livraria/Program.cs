@@ -36,7 +36,7 @@ void MenuPrincipal()
             MenuPrincipal();
             break;
         case 5:
-            Console.WriteLine("opcao");
+            ModificarLivro.EditarLivro(listaDeLivros);
             MenuPrincipal();
             break;
         case 6:
